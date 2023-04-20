@@ -8,7 +8,7 @@ app = Flask(__name__)
 def preprossing(image):
     image=Image.open(image)
     image = image.resize((224, 224))
-    image_arr = np.array(image.convert('RGB'))
+    image_arr = np.array(image)
     image_arr.shape = (1, 224, 224, 3)
     return image_arr
 

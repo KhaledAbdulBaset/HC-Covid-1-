@@ -9,6 +9,8 @@ def preprossing(image):
     image=Image.open(image)
     image = image.resize((224, 224))
     image_arr = np.array(image.convert("RGB"))
+    image_arr = image_arr / 225
+    image_arr = np.expand_dims(image_arr,0)
     image_arr.shape = (1, 224, 224, 3)
     return image_arr
 

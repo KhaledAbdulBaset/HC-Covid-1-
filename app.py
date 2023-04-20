@@ -57,7 +57,7 @@ def predict():
 
         print(prediction)
 
-        return render_template('index.html', prediction=prediction, image='static/IMG/', appName="Intel Image Classification")
+        return render_template('index.html', prediction=prediction, appName="Intel Image Classification")
     else:
         return render_template('index.html',appName="Intel Image Classification")
 

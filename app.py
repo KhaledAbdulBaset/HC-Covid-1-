@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, url_for, jsonify
 from keras.models import load_model
+from keras.utils.image_utils import img_to_array
 from PIL import Image
 import numpy as np
 

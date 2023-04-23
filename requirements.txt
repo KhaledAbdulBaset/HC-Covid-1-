@@ -1,4 +1,4 @@
-gunicorn
+streamlit
 Flask>=1.1.2
 keras>=2.11.0
 numpy>=1.21.5
